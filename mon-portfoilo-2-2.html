@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Développeur Web Junior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./mon-portfolio-2-2-css.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">DevPortfolio</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Accueil</a></li>
+                    <li><a href="#about" class="nav__link">À propos</a></li>
+                    <li><a href="#skills" class="nav__link">Compétences</a></li>
+                    <li><a href="#projects" class="nav__link">Projets</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home__container container">
+                <h1 class="home__title">Bonjour, je suis <span>MARYAM MAYARA</span></h1>
+                <p class="home__subtitle">Développeur Web Junior passionné par le Frontend.</p>
+                <a href="#contact" class="button">Me contacter</a>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">À propos</h2>
+            <div class="about__container container">
+                <div class="about__content">
+                    [span_3](start_span)<p>Étudiant en développement web, je me spécialise dans la création d'interfaces fluides et intuitives[span_3](end_span). Mon objectif est de transformer des idées complexes en expériences numériques simples et élégantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Compétences</h2>
+            <div class="skills__container container">
+                <span class="skill__tag">HTML5 (Avancé)</span>
+                <span class="skill__tag">CSS3 (Intermédiaire)</span>
+                <span class="skill__tag">python</span>
+                <span class="skill__tag">Bootstrap 5 (Avancé)</span>
+                <span class="skill__tag">Git (Intermédiaire)</span>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Mes Réalisations</h2>
+            <div class="projects__grid container">
+                <article class="project__card">
+                    <img src="assets/images/projet1.jpg" alt="Capture d'écran Projet 1" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__name">Site E-commerce</h3>
+                        <p class="project__description">Une plateforme de vente en ligne avec panier dynamique.</p>
+                        <div class="project__tech">HTML, CSS, JS</div>
+                        <a href="#" class="project__link">Voir sur GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project__card">
+                    <img src="assets/images/projet2.jpg" alt="Capture d'écran Projet 2" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__name">Application Météo</h3>
+                        <p class="project__description">Consultation du temps en temps réel via une API.</p>
+                        <div class="project__tech">JavaScript, CSS</div>
+                        <a href="#" class="project__link">Voir sur GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project__card">
+                    <img src="assets/images/projet3.jpg" alt="Capture d'écran Projet 3" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__name">Dashboard Admin</h3>
+                        <p class="project__description">Interface de gestion complète pour administrateurs.</p>
+                        <div class="project__tech">Bootstrap, HTML</div>
+                        <a href="#" class="project__link">Voir sur GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <div class="contact__container container">
+                <p>Besoin d'un développeur ? Envoyez-moi un message à : <strong>mon.email@exemple.com</strong></p>
+                <div class="social__links">
+                    <a href="#" class="social__icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social__icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2026 [Votre Nom]. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('nav-toggle');
+        const menu = document.getElementById('nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>
